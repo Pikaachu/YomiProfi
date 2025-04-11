@@ -1,2 +1,2 @@
-# onomatopeQuiz
-YomiuriGradsProj
+# Yomiprofi
+Yomiuri1st-yearProfi
