@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chhengnay</title>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<link href="filterStyles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="modal.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <div class="header_top">
+    <h1 class="logo"> <a href="../index.html"> <span class="text_small">Portfolio</span> <br>
+      Chhengnay Ich </a> </h1>
+    
+    <!--/*Navigation*/-->
+    <nav class="navbar">
+      <div>
+        <ul>
+          <li><a href="../index.html" id="home">トップ</a></li>
+          <li><a href="../about/about.html" id="portfolio">履歴</a></li>
+          <li><a href="work.html" id="hobby">作品</a></li>
+          <li><a href="../contact/contact.html" id="contact">連絡先</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div>
+<h2 class="background_title">作品</h2>
+
+<!--this part is the card-->
+
+<div id="myBtnContainer">
+  <button class="btn active showall" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn website" onclick="filterSelection('nature')">Illustrator</button>
+  <button class="btn movie" onclick="filterSelection('cars')"> Photoshop</button>
+  <button class="btn gallery" onclick="filterSelection('people')"> Others</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="gallery_background">
+  <section class="gallery_card w-container">
+  <div class="row">
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-2-close" style="--img:url(../image/img_work/tanoshii.jpg); --title:'楽しいの現す色'; --description: 'この画像は、明るい色を使用して視聴者に喜びを感じさせるために作成されました。これにより、明るい色と矛盾しないようにする作業がかなり複雑であることに気づきました。'; --hour: 'This image was made by using vibirant color to make the viewer feel the joy of the image, This made me noticed that working with vibirant color and make sure they were not contradict one another is quite complicate.' "> <img src="../image/img_work/tanoshii.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">楽しいの現す色</h2>
+          <p class="portfolio__description">見る人に楽しい気持ちを与えるために明るい色を使用して作成されました。</p>
+          <a href="#portfolio-2" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-2">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-2-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  <div class="column people">
+      <div class="content portfolio__item" id="portfolio-12-close" style="--img:url(../image/img_work/selfsite.png); --title:'初めての自己紹介サイト'; --description: 'このウェブサイトは、bootstrapを試したり、要素を変更したりして作成しました。'; --hour: 'I created this website by trying with bootstrap and trying to change elements. ' "> <img src="../image/img_work/selfsite.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">初めての自己紹介サイト</h2>
+          <p class="portfolio__description">Bootstrapで試してみる。<br>
+            <a href="https://pikachu-la.github.io/Chhengnay_Memo/" class="web-link">→Webiste Link</a></p>
+          <a href="#portfolio-12" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-12">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-12-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-6-close" style="--img:url(../image/img_work/yasashi.jpg); --title:'優しくの表す色'; --description: 'このアートボードは、見る人に穏やかな気持ちを与えるために、同系色を使用して作成された。'; --hour: 'This artboard was made by using a similar color, to make the viewer feel calm and peaceful.' "> <img src="../image/img_work/yasashi.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">優しくの表す色</h2>
+          <p class="portfolio__description">見る人に穏やかな気持ちを与えるため</p>
+          <a href="#portfolio-6" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-6">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-6-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  <div class="column nature">
+      <div class="content portfolio__item" id="portfolio-8-close" style="--img:url(../image/img_work/map.png); --title:'オリジナルマップ'; --description: '先生はAdobe Illustratorを使って、今まで試したことのないクリッピングマスク機能の使い方を教えていただき、とても興味深く楽しかったです。 これは国分寺駅にある私の寮の近くの地図です。'; --hour: 'Using adobe illustrator professor taught me how to use the clipping mask function. It was very interesting and fun. this is a map near my dorm in Kokubunji station'"> <img src="../image/img_work/map.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">オリジナルマップ</h2>
+          <p class="portfolio__description">クリッピングマスク機能の使い方</p>
+          <a href="#portfolio-8" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-8">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-8-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-3-close" style="--img:url(../image/img_work/starry.jpg); --title:'星空観察バナー'; --description: '画像とテキストを組み合わせてテーマバナーを作成してみます。 このバナーを作成し、教師からのフィードバックを受けて、フォントとその色が全体の結果にどのように影響するかに気づきました。'; --hour: ' I was trying to make a theme banner by using images and text combine. Upon making this banner and teacher feedback, i realized how font and their color can affect the total outcome.' "> <img src="../image/img_work/starry.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">星空観察バナー</h2>
+          <p class="portfolio__description">Starry sky Theme</p>
+          <a href="#portfolio-3" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-3">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-3-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+    
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-4-close" style="--img:url(../image/img_work/hiroigaru.jpg); --title:'広がる感を現す'; --description: '中央エリアを中心に大きなスペースをとり、その周囲を大小の正方形で囲み、広々とした空間感を出しました。'; --hour: 'I left a big space around the middle area which were surrounded by different size of square to give out a spacious space feeling.' "> <img src="../image/img_work/hiroigaru.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">広がり感を現す</h2>
+          <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#portfolio-4" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-4">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-4-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  <div class="column nature">
+      <div class="content portfolio__item" id="portfolio-5-close" style="--img:url(../image/img_work/namecard.png); --title:'名刺'; --description: 'トンボ機能の使い方と印刷用のアートボードの準備方法を学びます。'; --hour: 'learning how to use crop marks function and prepare artboard for printing purpose.' "> <img src="../image/img_work/namecard.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">名刺</h2>
+          <p class="portfolio__description">オリジナル名刺</p>
+          <a href="#portfolio-5" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-5">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-5-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  <div class="column nature">
+      <div class="content portfolio__item" id="portfolio-11-close" style="--img:url(../image/img_work/graph.png); --title:'インフォグラフィック'; --description: 'グラフ、棒グラフ、その他の機能を使用してデータとリソースを組み合わせてインフォグラフィックを作成する前に、データとリソースを収集する方法を学びました。'; --hour: 'I learnt on how to gather data and resource before combing it together using charts, bar graph and others functions to form an infographic.' "> <img src="../image/img_work/graph.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">インフォグラフィック</h2>
+          <p class="portfolio__description">Infographic</p>
+          <a href="#portfolio-11" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-11">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-11-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	  
+	  
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-7-close" style="--img:url(../image/img_work/marui.jpg); --title:'丸いの現すイラスト'; --description: '広がり感を出せるか、サークルと同系色を使ってみたときのことです。'; --hour: 'This was when i tried to use circle and similar color to see if I am able to make to show wide feeling. ' "> <img src="../image/img_work/marui.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">丸いの現すイラスト</h2>
+          <p class="portfolio__description">色と形を組み合わせる</p>
+          <a href="#portfolio-7" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-7">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-7-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="column nature">
+      <div class="content portfolio__item" id="portfolio-9-close" style="--img:url(../image/img_work/wheel.png); --title:'観覧車'; --description: 'Adobe を使用して観覧車を作成し、アニメーション化するためにそれらを異なるレイヤーに分割しました。'; --hour: 'Using adobe, we created a ferris wheel and separate them in different layers in order to animated.' "> <img src="../image/img_work/wheel.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">観覧車</h2>
+          <p class="portfolio__description">Ghost and ferries wheel</p>
+          <a href="#portfolio-9" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-9">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-9-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  <div class="column cars">
+      <div class="content portfolio__item" id="portfolio-10-close" style="--img:url(../image/img_work/momday.jpg); --title:'母の日バナー'; --description: '画像とテキストを組み合わせてテーマバナーを作成してみます。 このバナーを作成し、教師からのフィードバックを受けて、フォントとその色が全体の結果にどのように影響するかに気づきました。'; --hour: 'I was trying to make a theme banner by using images and text combine. Upon making this banner and teacher feedback, I realized how font and their color can affect the total outcome.' "> <img src="../image/img_work/momday.jpg" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">母の日バナー</h2>
+          <p class="portfolio__description">Mother's day banner</p>
+          <a href="#portfolio-10" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-10">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-10-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  <div class="column nature">
+      <div class="content portfolio__item" id="portfolio-1-close" style="--img:url(../image/img_work/line.png); --title:'スタンプ(Line Sticker)'; --description: 'まず紙にデザインをスケッチしてから、それを Adobe Illustrator アプリケーションに転送し、詳細、色、最後の仕上げを追加しました。'; --hour: 'we started by sketching the design on the paper before transferring it to the adobe illustrator application and added details, color and final touch.' "> <img src="../image/img_work/line.png" alt="Mountains" style="width:100%"> 
+        
+        <!--here-->
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">スタンプ (Line Sticker)</h2>
+          <p class="portfolio__description">オリジナルラインスタンプ</p>
+          <a href="#portfolio-1" class="portfolio__link">もっと見る</a> </div>
+        <div class="lightbox__item" id="portfolio-1">
+          <div class="lightbox__content">
+            <div class="lightbox__img"></div>
+            <h2 class="lightbox__title"></h2>
+            <p class="lightbox__description"></p>
+			  <p class="lightbox__hour"></p>
+            <a href="#portfolio-1-close" class="lightbox__close">×</a> </div>
+          
+          <!--to here--> 
+          
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  <!--this is testing-->
+	  
+	  
+	  
+	  
+	  <!--
+      <div class="column nature modal-open">
+        <div class="content"> <img src="../../_DSC0204.JPG" alt="Lights" style="width:100%"> </div>
+      </div>
+      <div class="column nature modal-open">
+        <div class="content"> <img src="../../_DSC0204.JPG" alt="Nature" style="width:100%"> </div>
+      </div>
+      <div class="column cars modal-open">
+        <div class="content"> <img src="../../_DSC0204.JPG" alt="Car" style="width:100%"> </div>
+      </div>
+      <div class="column cars">
+        <div class="content"> <img src="../../_DSC0204.JPG" alt="Car" style="width:100%">
+          <h4 class="caption">Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content"> <img src="../image/group.JPG" alt="Car" style="width:100%">
+          <h4 class="caption">Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content"> <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+          <h4 class="caption">Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content"> <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+          <h4 class="caption">Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content"> <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+          <h4 class="caption">Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+-->
+      <!-- END GRID --> 
+    </div>
+    </section>
+  </div>
+  
+  <!--card end--> 
+</div>
+<!--Modals--> 
+<!--<div class="modal" id="modal1">
+  <div class="modal-content">
+    <div class="modal-header">Modal 1
+      <button class="icon"> <i class="material-icons">close</i></button>
+    </div>
+    <div class="modal-body">this is a body text type sth later.</div>
+    <div class="modal-footer">
+      <button class="link modal-close">Close Modal</button>
+    </div>
+  </div>
+</div>--> 
+
+<!--img gallery--> 
+
+<!-- END MAIN -->
+<footer>
+  <p class="copyright">&copy;Chhengnay</p>
+  <p class="copyright_small">All rights reserved</p>
+  <script src="filters.js" type="text/javascript"></script> 
+</footer>
+</body>
+</html>
